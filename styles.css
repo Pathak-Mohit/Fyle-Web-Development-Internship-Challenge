@@ -1,0 +1,6 @@
+/* Add custom styles here */
+.error-icon {
+    display: none; /* Hide error icon by default */
+    color: red;
+    /* Other styles for error icon */
+}

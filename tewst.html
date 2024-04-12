@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        .info-icon {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Tax Calculator</h2>
+        <form id="taxForm" action="result.html" method="GET">
+            <div class="form-group">
+                <label for="grossIncome">Gross Annual Income:</label>
+                <input type="number" class="form-control" id="grossIncome" name="grossIncome" placeholder="Enter income">
+                <!-- Tooltip Icon -->
+                <span class="info-icon" data-toggle="tooltip" data-placement="right" title="Enter your total salary before deductions.">&#63;</span>
+            </div>
+            <div class="form-group">
+                <label for="extraIncome">Extra Income:</label>
+                <input type="number" class="form-control" id="extraIncome" name="extraIncome" placeholder="Enter extra income" required>
+            </div>
+            <div class="form-group">
+                <label for="deductions">Deductions:</label>
+                <input type="number" class="form-control" id="deductions" name="deductions" placeholder="Enter deductions" required>
+            </div>
+            <div class="form-group">
+                <label for="ageGroup">Age Group:</label>
+                <select class="form-control" id="ageGroup" name="ageGroup" required>
+                    <option value="">Select Age Group</option>
+                    <option value="under40">&lt; 40</option>
+                    <option value="between40and60">&ge; 40 &amp; &lt; 60</option>
+                    <option value="over60">&ge; 60</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Enable Bootstrap tooltips
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+</html>

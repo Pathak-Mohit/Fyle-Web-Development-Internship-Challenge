@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculation Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Tax Calculation Result</h2>
+        <div id="result"></div>
+    </div>
+    <div class="container mt-5">
+        <div id="result"></div>
+        <a href="calculator.html" class="btn btn-primary">Close</a>
+    </div>
+
+    <script>
+        // Parse the URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const grossIncome = parseFloat(params.get('grossIncome'));
+        const extraIncome = parseFloat(params.get('extraIncome'));
+        const deductions = parseFloat(params.get('deductions'));
+        const ageGroup = params.get('ageGroup');
+
+        // Calculate the tax based on the provided conditions
+        let taxRate;
+        if (ageGroup === 'under40') {
+            taxRate = 0.30;
+        } else if (ageGroup === 'between40and60') {
+            taxRate = 0.40;
+        } else if (ageGroup === 'over60') {
+            taxRate = 0.10;
+        }
+
+        const taxableIncome = grossIncome + extraIncome - deductions;
+        let tax = 0;
+        if (taxableIncome > 800000) {
+            tax = (taxableIncome - 800000) * taxRate;
+        }
+
+        // Display the result
+        document.getElementById('result').innerText = `The calculated tax is ₹${tax.toLocaleString()}`;
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
