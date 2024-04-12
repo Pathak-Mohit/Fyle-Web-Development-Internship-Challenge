@@ -73,9 +73,12 @@ People love working at Fyle. Check out our Glassdoor reviews [here](https://www
 
 Design a website that allows for tax calculation based on a users input.
 
-![Screenshot 2024-04-07 at 12.06.20 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/983632c5-ee66-4f64-a1a6-b3eeff04ddb8/b2775372-5b3a-462f-b309-5e3e512f457a/Screenshot_2024-04-07_at_12.06.20_AM.png)
+![Screenshot (30)](https://github.com/Pathak-Mohit/Fyle-Web-Development-Internship-Challenge/assets/110768370/c183a1ec-6407-4334-9ad5-dbeb0ba68e05)
 
-![Screenshot 2024-04-07 at 12.06.37 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/983632c5-ee66-4f64-a1a6-b3eeff04ddb8/24606b4a-5b8a-447c-8655-67dab0a7c472/Screenshot_2024-04-07_at_12.06.37_AM.png)
+
+![Screenshot (31)](https://github.com/Pathak-Mohit/Fyle-Web-Development-Internship-Challenge/assets/110768370/5adf64ac-23b9-4484-839e-03103017568c)
+
+
 
 ### References & Requirements
 
