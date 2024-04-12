@@ -1,4 +1,4 @@
-![Screenshot (30)](https://github.com/Pathak-Mohit/Fyle-Web-Development-Internship-Challenge/assets/110768370/0d9a037f-8029-4c44-a8f3-a029ca071c21)# Fyle Web Development Internship Challenge
+ Fyle Web Development Internship Challenge
 
 ## **Who is this for?**
 
